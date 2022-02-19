@@ -7,15 +7,25 @@ describe('getRandomWord', () => {
         expect(getRandomWord()).toBeTruthy()
     });
 });
-
-describe('compute Guess', () => {
-    it('works with match and present'), () => {
+describe('computeGuess', () => {
+    it('works with different words', () => {
         expect(computeGuess('boost', 'basic')).toEqual([
             LetterState.Match,
             LetterState.Miss,
             LetterState.Miss,
             LetterState.Present,
-            LetterState.Miss
+            LetterState.Miss,
         ])
-    };
+    });
+});
+describe('computeGuess', () => {
+    it('works when correct', () => {
+        expect(computeGuess('boost', 'boost')).toEqual([
+            LetterState.Match,
+            LetterState.Match,
+            LetterState.Match,
+            LetterState.Match,
+            LetterState.Match,
+        ])
+    });
 });
