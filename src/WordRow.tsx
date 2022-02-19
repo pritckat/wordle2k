@@ -10,9 +10,10 @@ export default function WordRow({letters: lettersProp = '' }: WordRowProps) {
         .split('')
         .concat(Array(lettersRemaining).fill(''))
     return(
-    <div className="grid grid-cols-5 gap-4 text-center">
+    <div className="grid grid-cols-5 gap-4 text-center my-4">
         {letters.map((char) => (
             <CharacterBox key={char} value={char} />
+            
         ))}
     </div>
     )

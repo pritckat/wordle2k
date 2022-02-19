@@ -13,6 +13,10 @@ function App() {
       <main>
         <WordRow letters="hel"/>
         <WordRow letters="hello" />
+        <WordRow letters="hello" />
+        <WordRow letters="hello" />
+        <WordRow letters="hello" />
+        <WordRow letters="hello" />
       </main>
     </div>
   )
