@@ -8,7 +8,7 @@ describe('getRandomWord', () => {
     });
 });
 
-describe('computeGuess'), () => {
+describe('compute Guess', () => {
     it('works with match and present'), () => {
         expect(computeGuess('boost', 'basic')).toEqual([
             LetterState.Match,
@@ -18,4 +18,4 @@ describe('computeGuess'), () => {
             LetterState.Miss
         ])
     };
-};
+});
